@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Forms Showcase</h1>
+    <p>This page demonstrates use of lists, tables, media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Web Design</li>
+      <li>SEO Optimization</li>
+      <li>Digital Marketing</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Steps to Get Started</h2>
+    <ol>
+      <li>Fill out the contact form below</li>
+      <li>Schedule a consultation</li>
+      <li>Receive your personalized strategy</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Pricing Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Features</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>Website + Hosting</td>
+          <td>$500</td>
+        </tr>
+        <tr>
+          <td>Pro</td>
+          <td>Basic + SEO + Analytics</td>
+          <td>$1,200</td>
+        </tr>
+        <tr>
+          <td>Enterprise</td>
+          <td>Pro + Marketing Campaign</td>
+          <td>$2,500</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Gallery</h2>
+    <article>
+      <h3>Sample Image</h3>
+      <img src="https://via.placeholder.com/400x200" alt="Sample Image" width="400" />
+    </article>
+
+    <article>
+      <h3>Audio Sample</h3>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </article>
+
+    <article>
+      <h3>Video Sample</h3>
+      <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </article>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required placeholder="John" minlength="2" autocomplete="given-name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" required placeholder="Doe" minlength="2" autocomplete="family-name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com" autocomplete="email">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9_]{5,15}" required placeholder="e.g. johndoe_123" title="5–15 letters, numbers, or underscores">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="6">
+
+        <label for="accountType">Account Type</label>
+        <select id="accountType" name="accountType" required>
+          <option value="">--Select--</option>
+          <option value="basic">Basic</option>
+          <option value="pro">Pro</option>
+          <option value="enterprise">Enterprise</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>Newsletter Subscription</label>
+        <input type="radio" name="newsletter" value="yes" required> Yes
+        <input type="radio" name="newsletter" value="no"> No
+
+        <label>Interests</label>
+        <input type="checkbox" name="interests" value="design"> Web Design
+        <input type="checkbox" name="interests" value="seo"> SEO
+        <input type="checkbox" name="interests" value="marketing"> Marketing
+      </fieldset>
+
+      <label for="bio">Short Bio</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+
+      <label for="range">Rate Your Interest (1-10)</label>
+      <input type="range" id="range" name="interest" min="1" max="10">
+
+      <label for="referral">Referral Code (optional)</label>
+      <input type="text" id="referral" name="referral" readonly value="INVITE2025">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; clement Kiptoo 2025 </p>
+  </footer>
+
+</body>
+</html>
